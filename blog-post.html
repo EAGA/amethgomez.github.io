@@ -71,37 +71,54 @@
 	    
 	    <article class="blog-post px-3 py-5 p-md-5">
 		    <div class="container">
-			    <!--<header class="blog-post-header">
-				    <h2 class="title mb-2">Why Every Developer Should Have A Blog</h2>
-				    <div class="meta mb-3"><span class="date">Published 3 months ago</span></div>
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Instalacion y Programacion en R con RStudio</h2>
+				    <div class="meta mb-3"><span class="date">29-04-2021</span></div>
 			    </header>
 			    
 			    <div class="blog-post-body">
 				    <figure class="blog-banner">
-				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/blog-post-banner.jpg" alt="image"></a>
+				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/r/r-rstudio.png" alt="image"></a>
 				        
 				    </figure>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    
-				    <h3 class="mt-5 mb-3">Code Block Example</h3>
-				    <p>You can get more info at <a href="https://highlightjs.org/" target="_blank">https://highlightjs.org/</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    
-				    <h3 class="mt-5 mb-3">Typography</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				    <h5 class="my-3">Bullet Points:</h5>
-				    <ul class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+					<p>En este apartado desarrollaré los  siguientes puntos:</p>
+					<ul class="mb-5">
+					  <li class="mb-2">Definicion y Conceptos</li>
+					  <li class="mb-2">Instalacion de R y RStudio</li>
+					  <li class="mb-2">Entorno de Trabajo</li>
+					  <li class="mb-2">Codigos de Ejemplo</li>
 					</ul>
-					<ol class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ol>
-
-				   
-			    </div>-->
+					<h3 class="mt-5 mb-3">Definicion y Conceptos</h3>
+				    <p>Antes de iniciar primero  debemos de diferenciar  R de RStudio. De este modo R  es un lenguaje de programación cuyo objetivo es el análisis estadístico y por otro lado  RStudio es el IDE o entorno  de  desarrollo integrado para la  programacion en R.</p>  
+					<h3 class="mt-5 mb-3">Instalacion de R y RStudio</h3>
+				    <p>Como  ya  tenemos   los  conceptos  iniciales procedamos  a la instalacion,  la  instalacion para  este  escenario la  realizare sobre un sistema operativo windows 10 primero instalaremos R el cual lo obtenemos desde la pagina https://cran.r-project.org/ 
+					   seleccionamos  el  sistema operativo con el deseamos trabajar, descargamos y procedemos a la instalamos</p>
+					<figure class="blog-banner">
+				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/r/r.png" alt="image"></a>  
+				    </figure>
+					<p>Ahora procedemos a instalar RStudio el cual lo obtenemos desde la pagina https://www.rstudio.com/products/rstudio/download/ una  vez  mas seleccionamos el  sistema operativo con el deseamos trabajar, descargamos y procedemos a la instalamos </p>
+				    <figure class="blog-banner">
+				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/r/rstudio.png" alt="image"></a>  
+				    </figure>
+					<p>Es importante recordar utilizar la version mas reciente y  estable</p>
+					<h3 class="mt-5 mb-3">Entorno de Trabajo</h3>
+					<figure class="blog-banner">
+				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/r/rstudio-escritorio.png" alt="image"></a>  
+				    </figure>
+					<p>Es momento de identificar nuestro ambiente de trabajo  como  todo IDE posee  barra de herramientas para  realizar  las  funciones  basica de abrir, guardar,vistas, etc.  seguido veremos  4 panel los  cuales describiremos  acontinuacion:</p>
+					<ul class="mb-5">
+					  <li class="mb-2">Panel Script:</li>
+					  <p>Es el  dedicado  para  la  escritura de nuestros  scripts o  codigos de programacion.</p>
+					  <li class="mb-2">Panel Consola.</li>
+					  <p>Este  panel nos presenta los resultados de todas  aquellas ejecuciones o instrucciones  dadas en nuestros scripts.</p>
+					  <li class="mb-2">Panel de Entorno de Trabajo.</li>
+					  <p>En la  medida que  ejecutemos script o codigos de programas estos se definiran en nuestro entorno de trabajo.</p>
+					  <li class="mb-2">Panel de Ejecucion.</li>
+					  <p>Todo script ejecutado  y cuyo resultado se obtenga  en la consola puede tener una representacion grafica en  este  panel asi  que  por definicion en este  panel veremos  nuestros graficos. 
+					     Sin  embargo tambien funciona para realizar tareas  de actualizacion de paquetes.</p>
+					</ul>
+					<h3 class="mt-5 mb-3">Codigos de Ejemplo</h3>
+					<p>...</p>
 				    
 			    <nav class="blog-nav nav nav-justified my-5">
 				  <a class="nav-link-prev nav-item nav-link rounded-left" href="#">Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
