@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <title>EAGA-IT-BLOG</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog IT EAGA">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+		<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">EAGA Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Inicio<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Sobre Mí</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="https://github.com/eaga/" target="_blank">Contácteme</a>	
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Instalación y Programación en R con RStudio</h2>
+				    <div class="meta mb-3"><span class="date">29-04-2021</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+				    <figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/r/r-rstudio.png" alt="image"></a>
+				        
+				    </figure>
+					<p>En este apartado desarrollaré los  siguientes puntos:</p>
+					<ul class="mb-5">
+					  <li class="mb-2">Definición y Conceptos</li>
+					  <li class="mb-2">Instalación de R y RStudio</li>
+					  <li class="mb-2">Entorno de Trabajo</li>
+					  <li class="mb-2">Códigos de Ejemplo</li>
+					</ul>
+					<h3 class="mt-5 mb-3">Definición y Conceptos</h3>
+				    <p>Antes de iniciar primero  debemos de diferenciar  R de RStudio. De este modo R  es un lenguaje de programación cuyo objetivo es el análisis estadístico y por otro lado  RStudio es el IDE o entorno  de  desarrollo integrado para la  programacion en R.</p>  
+					<h3 class="mt-5 mb-3">Instalación de R y RStudio</h3>
+				    <p>Como  ya  tenemos   los  conceptos  iniciales procedamos  a la instalación,   para  este  escenario todo se realiza sobre un sistema operativo windows 10 primero instalaremos R el cual lo obtenemos desde la pagina https://cran.r-project.org/ 
+					   seleccionamos  el  sistema operativo con el deseamos trabajar, descargamos y procedemos a la instalamos</p>
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/r/r.png" alt="image"></a>  
+				    </figure>
+					<p>Ahora procedemos a instalar RStudio el cual lo obtenemos desde la pagina https://www.rstudio.com/products/rstudio/download/ una  vez  mas seleccionamos el  sistema operativo con el deseamos trabajar, descargamos y procedemos a la instalamos </p>
+				    <figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/r/rstudio.png" alt="image"></a>  
+				    </figure>
+					<p>Recuerda utilizar la version mas reciente y  estable y mantente siempre actualizado</p>	
+					<h3 class="mt-5 mb-3">Entorno de Trabajo</h3>
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/r/rstudio-escritorio.png" alt="image"></a>  
+				    </figure>
+					<p>Es momento de identificar nuestro ambiente de trabajo  como  todo IDE posee  barra de herramientas para  realizar  las  funciones  basica de abrir, guardar,vistas, etc.  seguido veremos  4 panel los  cuales describiremos  acontinuacion:</p>
+					<ul class="mb-5">
+					  <li class="mb-2">Panel Script:</li>
+					  <p>Es el  dedicado  para  la  escritura de nuestros  scripts o  códigos de programación.</p>
+					  <li class="mb-2">Panel Consola.</li>
+					  <p>Este  panel nos presenta los resultados de todas  aquellas ejecuciones o instrucciones  dadas en nuestros scripts.</p>
+					  <li class="mb-2">Panel de Entorno de Trabajo.</li>
+					  <p>En la  medida que  ejecutemos script o códigos de programas estos se definirán en nuestro entorno de trabajo.</p>
+					  <li class="mb-2">Panel de Ejecución.</li>
+					  <p>Todo script ejecutado  y cuyo resultado se obtenga  en la consola puede tener una representación gráfica en  este  panel asi  que  por definición en este  panel veremos  nuestros gráficos. 
+					     Sin  embargo también funciona para realizar tareas  de actualización de paquetes.</p>
+					</ul>
+					<h3 class="mt-5 mb-3">Códigos de Ejemplo</h3>
+					<p>En esta sección estará disponible el enlace al repositorio <a href="https://github.com/eaga/deploy-and-code-r-rstudio">deploy-and-code-r-rstudio</a> y la lista de ejemplos desarrollados</p>
+				    <ul class="mb-5">
+						<li class="mb-2">Variables</li>
+						<li class="mb-2">Vectores</li>
+						<li class="mb-2">DataFrame</li>
+						<li class="mb-2">Matrices</li>
+						<li class="mb-2">Listas</li>
+						<li class="mb-2">Importación CSV</li>
+						<li class="mb-2">Importación XLS</li>
+						<li class="mb-2">Factores</li>
+						<li class="mb-2">Gráficas</li>
+						<li class="mb-2">Series de Tiempo</li>
+						<li class="mb-2">Histograma</li>
+						<li class="mb-2">GGPLOT2</li>
+						<li class="mb-2">Manipular Datos DPLYR</li>
+						<li class="mb-2">Animaciones</li>
+						<li class="mb-2">Modelos</li>
+						<li class="mb-2">Arboles de Decisiones</li>
+					</ul>
+				</div>	
+				
+				
+			    
+
+		    </div><!--//container-->
+	    </article>
+	    
+	    
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) 
+    <script src="assets/js/demo/style-switcher.js"></script>  -->      
+    
+
+</body>
+</html> 
+
