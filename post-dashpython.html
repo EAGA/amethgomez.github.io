@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <title>EAGA-IT-BLOG</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog IT EAGA">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+		<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">EAGA Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Inicio<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Sobre Mí</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="https://github.com/eaga/" target="_blank">Contácteme</a>	
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Dash Python</h2>
+				    <div class="meta mb-3"><span class="date">10-06-2021</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+				    <figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/Plotly_Dash_logo.png" alt="image"></a>
+				    </figure>
+					<p>La motivación es lo que te pone en marcha, el hábito es lo que hace que sigas (Jim Ryun).</p>   
+					<p>Con esa frase  iniciamos este  post que  se  titula Dash Python  si  ya  hemos  hablado  de Shiny App  
+					   y  mostramos un  ejemplo  ahora  hablaremos  un  poco de Dash Python.</p> 
+					<p>En este apartado veremos los  siguientes puntos:</p>
+					<ul class="mb-5">
+					  <li class="mb-2">Que es Dash</li>
+					  <li class="mb-2">Configuración y Despliegue</li>
+					  <li class="mb-2">Dash o Shiny ?</li>
+					  <li class="mb-2">Códigos de Ejemplo Dash</li>
+					</ul>
+					<h3 class="mt-5 mb-3">Que es Dash</h3>
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/dash_q_es.jpg" alt="image"></a>
+				    </figure>
+				    <p>Quiero  mencionar que  en este apartado no  profundizaremos  sobre  python  por lo  que  si  las palabras python, anaconda o jupyter  no  resulta familiar  es mejor que  profundices en  conceptos  básicos de python.</p> 
+					<p>Dicho esto Dash es un framework de Python y  recordemos  que  framework es un  entorno de  trabajo con  características especificas,  este  entorno aunque esta  diseñado 
+						para  construir  aplicaciones  web  suele usarse para crear visualizaciones, cuadro de mandos (Dashboard),  si muy  idéntico a a Shiny en R 
+					</p>	
+					<p>	Dash está basado principalmente en Flask, Plotly y ReactJS:</p> 
+						<ul class="mb-5"> 
+							<li class="mb-2">Flask: es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo número de líneas de código.</li>
+							<li class="mb-2">Plotly: es una biblioteca interactiva de código abierto que admite diversos tipos de gráficos para usos  estadísticos, financieros, geográficos, científicos y tridimensionales.</li> 
+							<li class="mb-2">ReactJS: es una biblioteca  escrita  en  javascript y de código abierto cuya  finalidad es crear interfaces de usuario.</li>
+						</ul>
+					<p>	Con el conjunto de herramientas descritas  podríamos decir  que  Dash  es multiplataforma esto  quiere decir  que  puedes diseñar la  aplicación  para  distintos tipos de pantallas en un solo código, 
+						es opensource este termino cada  vez se vuelve   imprescindible ya  que  puedes ahorrar costo  a  la hora  de la  implementación y por  ultimo  y no menos importante
+						es posible crear aplicaciones de manera muy rápida aunque  esto  tiene  sus  excepciones. 
+					</p>  
+					
+					<h3 class="mt-5 mb-3">Configuración y Despliegue</h3>
+					
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/dash_deploy.jpg" alt="image"></a>
+				    </figure>
+				    <p>Es importante  que  descargues  el  paquete de  <a href="https://www.anaconda.com/products/individual-b">Anaconda</a> importante  utilizar  al  ultima  version (Python 3.8) 
+					   una vez tengas instalado Anaconda seleccionaremos las  herramientas de jupyter notebook y jupyter lab dos herramientas  para  la  edicion de  codigo en  python es mi sugerencia para  los  que 
+					   que  inician  en python el  indentado  puede ser difícil de comprender y tiende a presentar muchos errores al compilar 
+					</p>
+					   
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/Anaconda_navigator.png" alt="image"></a>
+				    </figure>   
+					<p>Si tu aplicación esta lista para ver el mundo  o  ser  mostrada aquí tienes  diversos escenarios  pero  el  que  mas  te recomiendo <a href="https://www.heroku.com/">Heroku</a> 
+						por  su fácil   integración  con  proyectos  alojados  en <a href="https://github.com">GitHub</a> 
+						básicamente la  diferencia  esta   en  que  no  cargas  un proyecto  como  en  shiny con RStudio sino  que despliegas un  servicio 
+					</p>		    
+					<h3 class="mt-5 mb-3">Dash o Shiny ?</h3>
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/dash.jpg" alt="image"></a>  
+				    </figure>
+					<figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/dash/shiny_logo.png" alt="image"></a>  
+				    </figure>
+					<p>Creo  que  la  pregunta es cual  elegir  y  quisiera  aclarar  que  no  es mi  intención decirte a ti  cual  es la  mejor o  cual  sirve o no 
+					   lo  que si  expondré  sus bondades  y algunas  deficiencias entre  ambas al  final  tu  como  programador tomas  las  herramienta  que  mejor se  adapta a tu 
+					   trabajo:
+					</p>
+					   
+					<p>En  términos  generales  Dash esta  basado  en  Python  y utiliza  Flask, Plotly.js y React.js  para  el desarrollo  de  aplicaciones  por  lo  que  
+						crear  paneles  administrativos  es  realmente  comodo  y  mas  si  python  es  tu  herramienta  de preferencia,  por  otro lado  Shiny  utiliza  R para 
+						su  programación  y  puede  ser  potenciado  con  el  uso  de  html, css y  java script.  En términos generales ambas  herramientas  cumple los  objetivos 
+						aclaramos que para  ambas  debes  tener un  mínimo de conocimiento de programación.  
+					</p
+					>	
+					<p>Comparando Codigo  cada framework  por  lo  general  entrega  un  básico  de código  con  lo  que  creamos  el  común Hola Mundo  para  el  caso  de  Dash 
+						es  necesario  mas  lineas  de  código  inclusive  la  importacion  de una  librería  que sirve  los  componentes html,  en el caso  de  Shiny no es necesario importar 
+						librerías. 
+					</p>	
+					<p>	Si queremos ver elementos de  interfaces de usuario  nuevamente  Dash necesita añadir una  librería mas  para estas tareas en  el  caso  de  Shiny  no es necesario inclusive su  código  
+						es intuitivo si conoces algo de HTML. 
+					</p>
+					<p>Ahora  hablemos  del  diseño hoja de estilos  (CSS) ambos  framework pueden utilizar cualquier  hoja  de estilos, por  defecto  Shiny utiliza bootstrap 
+						cabe  mencionar que en una version 3.8 pero puedes  utilizar cualquier otra version  con  algo  de  codigo  extra de  este  modo  ambos  se  sirven  de  cualquier  framework  CSS 
+					</p>
+					
+					<h3 class="mt-5 mb-3">Códigos de Ejemplo</h3>
+					<p>En esta sección estará disponible el enlace al repositorio <a href="https://github.com/eaga/deploy-and-code-pyhton-dash.git">deploy-python</a> y el ejemplo desarrollado el  enlace directo a la ShinyApp es <a href="https://eaga.shinyapps.io/DashboardRealtor/">Dashboard</a></p>
+				    
+					
+				</div>	
+				
+				
+			    
+
+		    </div><!--//container-->
+	    </article>
+	    
+	    
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) 
+    <script src="assets/js/demo/style-switcher.js"></script>  -->      
+    
+
+</body>
+</html> 
+
