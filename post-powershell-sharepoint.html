@@ -84,7 +84,7 @@
 					</p>
 					<h3 class="mt-5 mb-3">Que es Sharepoint</h3>
 					<figure class="blog-banner">
-				        <a href="#"><img class="img-fluid" src="assets/images/blog/powershell/sharepoint.png" alt="image"></a>
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/powershell/sharepoint-logo.jpg" alt="image"></a>
 				    </figure>
 				    <p>es una plataforma de colaboración empresarial, formada por productos y elementos del  ecosistema Microsoft</p> 
 					<h3 class="mt-5 mb-3">Que es PnP PowerShell</h3>
@@ -105,7 +105,7 @@
 						componentes necesarios 
 					</p>  
 
-				    <p>Una Vez se complete la  instalación  es importante  tener claro  la definicion  del  siguiente  script:</p> 
+				    <p>Una Vez se complete la  instalación  es importante  tener claro  la definición  del  siguiente  script:</p> 
 					<p> $hoy=(Get-Date)
 						$dia1 = $hoy.date.addDays(-1)
 						$dia2 = $hoy.date.addDays(-3)  En  el  podemos  ver que primero  asigna a una variable  el  valor de la  fecha actual con  base  a  eso  podemos  observar  que la  linea dos  y tareas
@@ -115,11 +115,11 @@
 					<p>
 						Ahora  nuestro script de  búsqueda: </p> 
 					<p>	
-						<script> 
+						
 							Connect-PnPOnline https://contoso.sharepoint.com/sites/contoso
 
 							Get-PnPRecycleBinItem -firststage | ? {($_.DeletedDate -gt $dia2 -and $_.DeletedDate -lt $dia1) -and ($_.DeletedByEmail -eq 'user@contoso.com')} | Export-Csv c:\temp\restore.csv
-						</script>
+						
 					</p>
 					
 					<p></p>
@@ -135,11 +135,11 @@
 						Ahora  nuestro script de restauracion: </p> 
 					<p>	
 					 <p>
-						<script> 
+						
 							Connect-PnPOnline https://contoso.sharepoint.com/sites/contoso
 
 							Get-PnPRecycleBinItem -firststage | ? {($_.DeletedDate -gt $dia2 -and $_.DeletedDate -lt $dia1) -and ($_.DeletedByEmail -eq 'user@contoso.com')} | ? LeafName -like '*.xlsm' | Restore-PnpRecycleBinItem -Force
-						</script>
+						
 					</p>
 						
 
